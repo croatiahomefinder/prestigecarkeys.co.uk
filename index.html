@@ -19,7 +19,7 @@
   <meta property="og:title" content="Premium Car Keys | Porsche, Volvo & JLR Auto Locksmith Halesowen">
   <meta property="og:description" content="Specialist car keys and CAN Phantom immobilisers for Porsche, Volvo & JLR. Workshop by appointment in Halesowen and mobile up to 99 miles.">
   <meta property="og:url" content="https://www.premiumcarkeys.co.uk/">
-  <meta property="og:image" content="https://www.premiumcarkeys.co.uk/images/hero-premium.jpg">
+  <meta property="og:image" content="https://www.premiumcarkeys.co.uk/ourvanpic.jpg">
 
   <style>
     :root {
@@ -397,16 +397,20 @@
       font-size: 13px;
     }
 
-    /* IMAGE GRID (PLACEHOLDER PHOTOS) */
+    /* brand photos inside cards */
+    .brand-photo {
+      border-radius: 10px;
+      margin-bottom: 10px;
+      border: 1px solid var(--border-soft);
+    }
 
+    /* IMAGE GRID (removed section used this; kept in case you re-add later) */
     .image-card {
       padding: 10px;
     }
-
     .image-card::before {
-      display: none; /* no accent strip on pure image boxes */
+      display: none;
     }
-
     .image-card img {
       border-radius: 10px;
       width: 100%;
@@ -425,6 +429,26 @@
 
     .simple-list li {
       margin-bottom: 4px;
+    }
+
+    /* REVIEWS */
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .review-stars {
+      color: #f3b544;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .review-meta {
+      font-size: 12px;
+      color: var(--text-soft);
+      margin-bottom: 6px;
     }
 
     /* CONTACT SECTION */
@@ -579,6 +603,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#coverage">Vehicles</a></li>
           <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#reviews">Reviews</a></li>
           <li><a href="#can-phantom">CAN Phantom</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -614,8 +639,8 @@
       </div>
       <div>
         <div class="hero-card">
-          <!-- Replace this hero image with your own -->
-          <img src="images/hero-premium.jpg" alt="Porsche and Range Rover parked outside a modern building">
+          <!-- Your van hero image -->
+          <img src="images/our-van.jpg" alt="Premium Car Keys mobile workshop van in front of brick buildings">
           <strong>Trusted, specialist auto locksmith.</strong>
           <p>
             We only work on Porsche, Volvo and JLR. That focus lets us invest in the tools and knowledge needed for these vehicles –
@@ -660,31 +685,6 @@
     </div>
   </section>
 
-  <!-- PHOTO PLACEHOLDERS (for your own images) -->
-  <section class="section">
-    <div class="container">
-      <h2>Workshop &amp; vehicle examples</h2>
-      <p class="section-intro">
-        Add a few clear photos here to match the simple, professional look you prefer – for example your workshop, diagnostic
-        equipment and customer vehicles.
-      </p>
-      <div class="three-col">
-        <div class="card image-card">
-          <!-- Replace this image with your own photo -->
-          <img src="images/workshop-example.jpg" alt="Premium Car Keys workshop example">
-        </div>
-        <div class="card image-card">
-          <!-- Replace this image with your own photo -->
-          <img src="images/porsche-example.jpg" alt="Porsche key programming example">
-        </div>
-        <div class="card image-card">
-          <!-- Replace this image with your own photo -->
-          <img src="images/jlr-example.jpg" alt="Range Rover key replacement example">
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- VEHICLE COVERAGE -->
   <section class="section section-alt" id="coverage">
     <div class="container">
@@ -695,6 +695,7 @@
       </p>
       <div class="three-col">
         <div class="card">
+          <img src="images/porschesparekey.jpg" class="brand-photo" alt="Porsche sports car with new key held in front">
           <h3>Porsche • 2010–2021</h3>
           <p style="margin-top:0;margin-bottom:8px;font-size:14px;color:var(--text-soft);">
             Spare keys and all keys lost for most modern Porsche smart key systems:
@@ -709,6 +710,7 @@
           </ul>
         </div>
         <div class="card">
+          <img src="images/volvosparekey.jpg" class="brand-photo" alt="Volvo XC90 with keys in foreground">
           <h3>Volvo • 2010–2025</h3>
           <p style="margin-top:0;margin-bottom:8px;font-size:14px;color:var(--text-soft);">
             From classic rectangular remotes to later leather-style smart keys:
@@ -720,6 +722,7 @@
           </ul>
         </div>
         <div class="card">
+          <img src="images/ftypesparekey.jpg" class="brand-photo" alt="Jaguar sports car with two Jaguar smart keys held in front">
           <h3>JLR • 2010–2025</h3>
           <p style="margin-top:0;margin-bottom:8px;font-size:14px;color:var(--text-soft);">
             Jaguar, Land Rover &amp; Range Rover smart keys and selected flip keys:
@@ -809,8 +812,73 @@
     </div>
   </section>
 
+  <!-- REVIEWS -->
+  <section class="section section-alt" id="reviews">
+    <div class="container">
+      <h2>Recent customer reviews</h2>
+      <p class="section-intro">
+        A few examples from owners we’ve helped with Porsche, Volvo and JLR keys and CAN Phantom installations.
+      </p>
+      <div class="reviews-grid">
+        <div class="card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-meta">Mark – 2018 Range Rover Sport • Spare key &amp; CAN Phantom</div>
+          <p style="margin:0;font-size:14px;color:var(--text-soft);">
+            “Sent a photo of my key on WhatsApp and had a price within minutes. Spare key cut and coded at their workshop and CAN
+            Phantom fitted at the same time. Very professional setup and everything explained clearly.”
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-meta">Sophie – 2017 Volvo XC90 • All keys lost</div>
+          <p style="margin:0;font-size:14px;color:var(--text-soft);">
+            “Lost both keys for our XC90 and didn’t think anyone would be able to help without Volvo main dealer. Premium Car Keys
+            came out, gained entry and programmed new keys on the drive. Huge relief and worth every penny.”
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-meta">James – 2016 Porsche 911 • Spare key</div>
+          <p style="margin:0;font-size:14px;color:var(--text-soft);">
+            “Wanted a spare key before a European trip. They knew the Porsche system inside out, booked me in quickly and had the new
+            key working first time. Workshop is very tidy and you can tell they take pride in the job.”
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-meta">Imran – 2019 Jaguar F-PACE • All keys lost</div>
+          <p style="margin:0;font-size:14px;color:var(--text-soft);">
+            “Dealer quoted crazy money and a long wait. Premium Car Keys recovered the car on the drive, programmed new Jaguar keys
+            and checked everything with me before leaving. Great communication from start to finish.”
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-meta">Laura – 2015 Volvo V60 • Second key before sale</div>
+          <p style="margin:0;font-size:14px;color:var(--text-soft);">
+            “Needed a second key to help sell my V60. Price was clear, appointment arranged quickly and I could wait while they did
+            the work. They even showed me how to change the battery myself in future.”
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-meta">Ben – 2020 Range Rover Velar • Same-day spare key</div>
+          <p style="margin:0;font-size:14px;color:var(--text-soft);">
+            “Called in the morning and they managed to fit me in the same day at my workplace. New Velar key cut, coded and tested in
+            under an hour. Really handy mobile service and very polite throughout.”
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CAN PHANTOM DETAILS -->
-  <section class="section section-alt" id="can-phantom">
+  <section class="section" id="can-phantom">
     <div class="container">
       <h2>CAN Phantom immobiliser</h2>
       <p class="section-intro">
